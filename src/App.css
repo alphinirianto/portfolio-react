@@ -1,0 +1,260 @@
+/* =========================
+   GLOBAL / GLOBAL SETTING
+========================= */
+
+/* Smooth scroll untuk navigasi anchor */
+/* Smooth scrolling for anchor navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Variabel spacing global */
+/* Global spacing variables */
+:root {
+  --gap-sm: 8px;
+  --gap-md: 16px;
+  --gap-lg: 24px;
+}
+
+/* =========================
+   COUNTER COMPONENT
+========================= */
+
+/* Counter badge / komponen angka kecil */
+.counter {
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 6px;
+
+  color: var(--accent);
+  background: var(--accent-bg);
+
+  border: 2px solid transparent;
+  transition: 0.25s ease;
+
+  margin-bottom: var(--gap-lg);
+}
+
+/* Hover effect / efek saat hover */
+.counter:hover {
+  border-color: var(--accent-border);
+}
+
+/* Accessibility focus / fokus untuk aksesibilitas */
+.counter:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* =========================
+   HERO SECTION (CENTERED GRID)
+========================= */
+
+/* Hero container utama / main hero container */
+.hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+/* Wrapper untuk stack elemen hero */
+.hero__stack {
+  position: relative;
+  width: 170px;
+}
+
+/* Layer dasar untuk hero */
+.hero__base {
+  position: relative;
+  width: 170px;
+  z-index: 0;
+}
+
+/* Layer umum untuk framework & vite */
+.hero__layer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Framework logo layer */
+.hero__framework {
+  top: 34px;
+  height: 28px;
+  z-index: 2;
+
+  transform: translateX(-50%) perspective(2000px)
+    rotateZ(300deg) rotateX(44deg) rotateY(39deg) scale(1.4);
+}
+
+/* Vite logo layer */
+.hero__vite {
+  top: 107px;
+  height: 26px;
+  z-index: 1;
+
+  transform: translateX(-50%) perspective(2000px)
+    rotateZ(300deg) rotateX(40deg) rotateY(39deg) scale(0.8);
+}
+
+/* =========================
+   CENTER CONTENT SECTION
+========================= */
+
+/* Layout konten tengah / center content layout */
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  flex: 1;
+  padding: var(--gap-lg);
+}
+
+/* =========================
+   NEXT STEPS SECTION (GRID)
+========================= */
+
+/* Section grid untuk langkah berikutnya */
+#next-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid var(--border);
+  text-align: left;
+}
+
+/* Item dalam grid */
+#next-steps > div {
+  padding: 32px;
+}
+
+/* Icon dalam section */
+#next-steps .icon {
+  width: 22px;
+  height: 22px;
+  margin-bottom: var(--gap-md);
+}
+
+/* =========================
+   LIST / SOCIAL LINKS
+========================= */
+
+/* List container */
+#next-steps ul {
+  list-style: none;
+  padding: 0;
+
+  margin-top: 32px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-sm);
+}
+
+/* Item list responsive */
+#next-steps ul li {
+  flex: 1 1 calc(50% - var(--gap-sm));
+}
+
+/* Link button style */
+#next-steps ul a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: var(--gap-sm);
+
+  padding: 8px 12px;
+  border-radius: 6px;
+
+  font-size: 16px;
+  color: var(--text-h);
+  background: var(--social-bg);
+
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+/* Hover effect link */
+#next-steps ul a:hover {
+  box-shadow: var(--shadow);
+}
+
+/* =========================
+   SPACER / PEMISAH SECTION
+========================= */
+
+/* Spacer antar section */
+#spacer {
+  height: 88px;
+  border-top: 1px solid var(--border);
+}
+
+/* =========================
+   TICKS / DECORATION
+========================= */
+
+/* Decorative ticks element */
+.ticks {
+  position: relative;
+  width: 100%;
+}
+
+/* Left & right triangle decoration */
+.ticks::before,
+.ticks::after {
+  content: "";
+  position: absolute;
+  top: -4.5px;
+  border: 5px solid transparent;
+}
+
+/* Left tick */
+.ticks::before {
+  left: 0;
+  border-left-color: var(--border);
+}
+
+/* Right tick */
+.ticks::after {
+  right: 0;
+  border-right-color: var(--border);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1024px) {
+
+  /* Stack layout for next steps */
+  #next-steps {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  /* Reduce padding mobile */
+  #next-steps > div {
+    padding: 24px 20px;
+  }
+
+  /* Center list items on mobile */
+  #next-steps ul {
+    justify-content: center;
+  }
+
+  /* Spacer smaller on mobile */
+  #spacer {
+    height: 48px;
+  }
+
+  /* Center content adjustment */
+  #center {
+    padding: 20px;
+    align-items: stretch;
+  }
+}

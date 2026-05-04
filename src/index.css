@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🔥 ROOT THEME (COFFEE / BROWN CLEAN) */
+:root {
+  --text: #6f6a5f;
+  --text-h: #1a1a1a;
+  --bg: #f5f1e8;
+  --border: #d6d0c4;
+  --code-bg: #ede7dc;
+  --accent: #c9b079;
+  --accent-bg: rgba(201, 176, 121, 0.15);
+  --accent-border: rgba(201, 176, 121, 0.5);
+
+  --shadow:
+    rgba(0, 0, 0, 0.08) 0 10px 20px -5px,
+    rgba(0, 0, 0, 0.04) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+/* 🔥 GLOBAL FIX (INI YANG BIKIN GAK ADA PUTIH LAGI) */
+html,
+body,
+#root {
+  background: var(--bg);
+}
+
+/* BODY */
+body {
+  margin: 0;
+  color: var(--text);
+}
+
+/* ❌ HAPUS CENTER BATAS LAYOUT (BIAR FULL WIDTH) */
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🔥 TYPOGRAPHY */
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.5px;
+  margin: 32px 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+/* 🔥 CODE STYLE */
+code {
+  font-family: var(--mono);
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--code-bg);
+  color: var(--text-h);
+}
+
+/* 🔥 TERMINAL EFFECT */
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+.caret {
+  display: inline-block;
+  width: 6px;
+  height: 14px;
+  background: #c9b079;
+  margin-left: 5px;
+  animation: blink 1s infinite;
+}
+
+.terminal-glow {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+}
+
+/* 🔥 BUTTON SMOOTH */
+button {
+  transition: all 0.25s ease;
+}
+
+/* 🔥 MARQUEE SMOOTH PREMIUM */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+/* 🔥 BONUS: FADE EDGE (KAYAK WEBSITE APPLE) */
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee-container::before,
+.marquee-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+}
+
+.marquee-container::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg), transparent);
+}
+
+.marquee-container::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg), transparent);
+}

@@ -1,0 +1,253 @@
+{
+  "navbar": {
+    "work": "Proyek",
+    "about": "Tentang",
+    "experience": "Pengalaman",
+    "writing": "Tulisan",
+    "contact": "Kontak",
+    "cta": "Hubungi Saya"
+  },
+
+  "hero": {
+    "available": "● TERSEDIA UNTUK PROYEK TERPILIH · 2026",
+    "desc": "Membangun software yang thoughtful untuk web. Saya merancang dan membangun sistem yang kuat dan berfokus pada pengguna.",
+    "ctaWork": "Lihat proyek",
+    "ctaContact": "Kontak",
+    "ctaCV": "Unduh CV",
+    "role": "Software Engineer",
+    "hello": "hai — terima kasih sudah berkunjung",
+    "exp": "Tahun Pengalaman",
+    "projects": "Sistem Dibangun"
+  },
+
+  "about": {
+    "label": "/ 01 — Tentang",
+    "title1": "Seorang engineer yang menghargai",
+    "titleHighlight": "kejelasan",
+    "title2": "craft, dan detail kecil.",
+    "location": "Bandung, Indonesia",
+
+    "p1": "Saya adalah software engineer yang peduli pada pengalaman pengguna dan developer.",
+    "p2": "Saya menyukai arsitektur sederhana, struktur yang jelas, dan kode yang mudah dibaca.",
+    "p3": "Saya menikmati pekerjaan 'tidak terlihat': observability, migrasi, dan memperkuat sistem.",
+
+    "list": [
+      "Memimpin migrasi tanpa downtime",
+      "Membimbing 12+ engineer",
+      "Pembicara di meetup developer",
+      "Kontributor open-source"
+    ],
+
+    "stats": [
+      { "value": "3+", "label": "Tahun Pengalaman" },
+      { "value": "6", "label": "Sistem Dibangun" },
+      { "value": "38", "label": "Repository" },
+      { "value": "21☕", "label": "Kopi/minggu" }
+    ]
+  },
+
+  "work": {
+    "label": "/ 02 — Proyek Pilihan",
+    "title1": "Hal yang saya bangun,",
+    "title2": "rilis, dan pelajari.",
+
+    "categories": {
+      "ALL": "SEMUA",
+      "FRONTEND": "FRONTEND",
+      "BACKEND": "BACKEND",
+      "OSS": "OSS",
+      "TOOLS": "TOOLS"
+    },
+
+    "projects": [
+      {
+        "title": "Hearth CLI",
+        "desc": "CLI untuk developer dalam mengelola environment lokal.",
+        "tags": ["RUST", "OSS"],
+        "category": "TOOLS",
+        "image": "/images/project1.png",
+        "year": "2024",
+        "role": "TECH LEAD"
+      },
+      {
+        "title": "Lumen Design System",
+        "desc": "Library komponen dengan sistem design token & theming.",
+        "tags": ["REACT", "TAILWIND"],
+        "category": "FRONTEND",
+        "image": "/images/project2.png",
+        "year": "2023",
+        "role": "FRONTEND"
+      },
+      {
+        "title": "Analytics Engine",
+        "desc": "Sistem backend untuk pemrosesan data.",
+        "tags": ["NODE", "API"],
+        "category": "BACKEND",
+        "image": "/images/project3.png",
+        "year": "2023",
+        "role": "BACKEND"
+      },
+      {
+        "title": "Open Source Tooling",
+        "desc": "Ekosistem CLI & tools developer.",
+        "tags": ["OSS", "DX"],
+        "category": "OSS",
+        "image": "/images/project4.png",
+        "year": "2022",
+        "role": "MAINTAINER"
+      }
+    ]
+  },
+
+  "toolkit": {
+  "label": "/ 03 — TOOLKIT",
+  "title1": "Stack yang saya",
+  "title2": "gunakan.",
+  "desc": "Saya adalah generalist dengan fokus backend. Nyaman di seluruh stack dan selalu siap belajar sesuai kebutuhan problem — ini adalah tools yang sering saya gunakan.",
+
+  "sections": [
+    {
+      "title": "Bahasa",
+      "items": ["TypeScript", "Go", "Python", "Rust", "SQL", "Swift"]
+    },
+    {
+      "title": "Frontend",
+      "items": ["React", "Next.js", "Tailwind", "Radix UI", "Vite", "React Query"]
+    },
+    {
+      "title": "Backend & Infra",
+      "items": [
+        "Node.js",
+        "FastAPI",
+        "Postgres",
+        "Redis",
+        "Kafka",
+        "Docker",
+        "Kubernetes",
+        "AWS"
+      ]
+    },
+    {
+      "title": "Praktik",
+      "items": [
+        "System design",
+        "DX tooling",
+        "Observability",
+        "Code review",
+        "Mentoring",
+        "Tech writing"
+      ]
+    }
+  ]
+},
+  "experience": {
+  "label": "/ 04 — PENGALAMAN",
+  "title": "Perjalanan karier saya.",
+
+  "items": [
+    {
+      "period": "2019 ",
+      "location": "Remote",
+      "role": "Software Engineer",
+      "company": "PT. Scola LMS Bandung",
+      "points": [
+        "membuat website sistem absensi karyawan."
+      ]
+    },
+    {
+      "period": "2022",
+      "location": "Cimahi",
+      "role": "Software Engineer",
+      "company": "PT. Sansan Saudaratex Jaya",
+      "points": [
+        "Sistem analisis dan evaluasi.",
+        "Website data dan pengeluaran barang (POS)."
+      ]
+    },
+    {
+      "period": "2024",
+      "location": "Jakarta",
+      "role": "Java Developer",
+      "company": "PT. Hand Solution Indonesia",
+      "points": [
+        "Programmer Java.",
+        "Developer."
+      ]
+    }
+  ]
+},
+
+  "writing": {
+  "label": "/ 05 — TULISAN",
+  "title": "Catatan tentang engineering & craft.",
+  "viewAll": "LIHAT SEMUA →",
+  "read": "BACA ARTIKEL ↗",
+
+  "posts": [
+    {
+      "date": "APR 2024",
+      "title": "Merancang batas sistem yang ter-typed",
+      "desc": "Mengapa saya menganggap schema sebagai bagian terpenting dalam sistem terdistribusi."
+    },
+    {
+      "date": "JAN 2024",
+      "title": "CLI adalah UI",
+      "desc": "Pelajaran dari membangun Hearth — detail kecil yang membuat tools terasa hidup."
+    },
+    {
+      "date": "SEP 2023",
+      "title": "Lebih sedikit hype, lebih banyak hal sederhana",
+      "desc": "Pembelaan terhadap Postgres, monolith, dan engineering yang sabar."
+    }
+  ]
+  },
+  "testimonials": {
+  "label": "/ 06 — TESTIMONI",
+  "title": "Dari orang-orang yang pernah bekerja dengan saya.",
+
+  "items": [
+    {
+      "quote": "Alphin memiliki kemampuan langka untuk berpindah dari arsitektur hingga detail UI tanpa kehilangan arah. Ia selalu meningkatkan standar kualitas tim.",
+      "name": "David",
+      "role": "STAFF, PT SCOLA LMS BANDUNG "
+    },
+    {
+      "quote": "Ia menyelesaikan pipeline analytics lebih cepat dari estimasi — dan kodenya paling rapi di repo. Tenang, thoughtful, dan bisa diandalkan.",
+      "name": "Daniel Pratama",
+      "role": "CO-FOUNDER, PT SANSAN SAUDARATEX JAYA - CIMAHI"
+    },
+    {
+      "quote": "Bekerja dengan Alphin seperti bekerja dengan designer yang juga jago coding. Developer experience kami meningkat drastis.",
+      "name": "Maya Iskandar",
+      "role": "STAFF, PT HAND SOLUTIONS INDONESIA - JAKARTA"
+    }
+  ]
+},
+
+ "contact": {
+  "label": "/ 07 — KONTAK",
+  "title1": "Mari bangun sesuatu",
+  "title2": "yang bermakna bersama.",
+  "desc": "Saya terbuka untuk diskusi peluang baru, ide menarik, atau sekadar ngobrol tentang engineering dan design.",
+
+  "cta": "PUNYA PROYEK?",
+  "email": "alphinirianto@gmail.com",
+
+  "socials": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter",
+    "resume": "Resume",
+    "instagram": "instagram",
+    "whatsapp": "whatsapp"
+  },
+  "links": {
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://linkedin.com/in/alphinirianto",
+    "twitter": "https://twitter.com/IriantoAlphin",
+    "resume": "/Cv-Alphin irianto terbaru.pdf",
+    "instagram": "https://instagram.com/alphinirianto",
+    "whatsapp": "https://wa.me/6285712904896"
+  }
+}
+}

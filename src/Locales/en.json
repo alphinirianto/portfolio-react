@@ -1,0 +1,251 @@
+{
+  "navbar": {
+    "work": "Work",
+    "about": "About",
+    "experience": "Experience",
+    "writing": "Writing",
+    "contact": "Contact",
+    "cta": "Get in touch"
+  },
+  "hero": {
+    "available": "● AVAILABLE FOR SELECT PROJECTS · 2026",
+    "desc": "Building thoughtful software for the web. I design and build resilient, user-first systems — from clean interfaces to APIs that power them.",
+    "ctaWork": "See selected work",
+    "ctaContact": "Contact",
+    "ctaCV": "Download CV",
+    "role": "Software Engineer",
+    "hello": "hi — thanks for stopping by",
+    "exp": "Years Building Software",
+    "projects": "Systems Shipped"
+  },
+
+  "about": {
+    "label": "/ 01 — About",
+    "title1": "An engineer who values",
+    "titleHighlight": "clarity",
+    "title2": "craft, and the boring details.",
+    "location": "Bandung, Indonesia",
+
+    "p1": "I'm a software engineer who cares deeply about how things feel — both for the people who use the product and the engineers who maintain it.",
+    "p2": "I lean toward simple architectures, well-typed boundaries, and code that reads like prose. I've worked across the stack — from frontend interfaces to backend systems.",
+    "p3": "I enjoy the unglamorous work: observability, migrations, and turning fragile prototypes into systems teams can rely on.",
+
+    "list": [
+      "Led migrations without downtime",
+      "Mentored 12+ engineers",
+      "Speaker at dev meetups",
+      "Open-source contributor"
+    ],
+
+    "stats": [
+      { "value": "3+", "label": "Years building software" },
+      { "value": "6", "label": "Systems shipped" },
+      { "value": "38", "label": "Repositories" },
+      { "value": "21☕", "label": "Coffee/week" }
+    ]
+  },
+  "work": {
+  "label": "/ 02 — Selected Work",
+  "title1": "Things I've built,",
+  "title2": "shipped, and learned from.",
+
+  "categories": {
+    "ALL": "ALL",
+    "FRONTEND": "FRONTEND",
+    "BACKEND": "BACKEND",
+    "OSS": "OSS",
+    "TOOLS": "TOOLS"
+  },
+
+  "projects": [
+    {
+      "title": "Hearth CLI",
+      "desc": "Developer-first CLI for managing local environments.",
+      "tags": ["RUST", "OSS"],
+      "category": "TOOLS",
+      "image": "/images/project1.png",
+      "year": "2024",
+      "role": "TECH LEAD"
+    },
+    {
+      "title": "Lumen Design System",
+      "desc": "Typed component library with tokens & theming.",
+      "tags": ["REACT", "TAILWIND"],
+      "category": "FRONTEND",
+      "image": "/images/project2.png",
+      "year": "2023",
+      "role": "FRONTEND"
+    },
+    {
+      "title": "Analytics Engine",
+      "desc": "Data processing backend system.",
+      "tags": ["NODE", "API"],
+      "category": "BACKEND",
+      "image": "/images/project3.png",
+      "year": "2023",
+      "role": "BACKEND"
+    },
+    {
+      "title": "Open Source Tooling",
+      "desc": "CLI & dev tools ecosystem.",
+      "tags": ["OSS", "DX"],
+      "category": "OSS",
+      "image": "/images/project4.png",
+      "year": "2022",
+      "role": "MAINTAINER"
+    }
+  ]
+  },
+  "toolkit": {
+  "label": "/ 03 — TOOLKIT",
+  "title1": "The stack I",
+  "title2": "reach for.",
+  "desc": "I'm a generalist with a backend lean. Comfortable across the stack and happy to learn whatever the problem needs — these are simply the tools I keep coming back to.",
+
+  "sections": [
+    {
+      "title": "Languages",
+      "items": ["TypeScript", "Go", "Python", "Rust", "SQL", "Swift"]
+    },
+    {
+      "title": "Frontend",
+      "items": ["React", "Next.js", "Tailwind", "Radix UI", "Vite", "React Query"]
+    },
+    {
+      "title": "Backend & Infra",
+      "items": [
+        "Node.js",
+        "FastAPI",
+        "Postgres",
+        "Redis",
+        "Kafka",
+        "Docker",
+        "Kubernetes",
+        "AWS"
+      ]
+    },
+    {
+      "title": "Practices",
+      "items": [
+        "System design",
+        "DX tooling",
+        "Observability",
+        "Code review",
+        "Mentoring",
+        "Tech writing"
+      ]
+    }
+  ]
+},
+  "experience": {
+  "label": "/ 04 — EXPERIENCE",
+  "title": "Where I've spent my hours.",
+
+  "items": [
+    {
+      "period": "2019",
+      "location": "Remote",
+      "role": "Software Engineer",
+      "company": "PT. Scola LMS Bandung",
+      "points": [
+        "create an employee attendance system website."
+      ]
+    },
+    {
+      "period": "2022",
+      "location": "Cimahi",
+      "role": "Software Engineer",
+      "company": "Hearth",
+      "points": [
+        "System Analyst and evaluation",
+        "Built a website Data and goods expenditure (POS) website"
+      ]
+    },
+    {
+      "period": "2024",
+      "location": "Jakarta",
+      "role": "Java Developer",
+      "company": "PT. Hand Solutions Indonesia",
+      "points": [
+        "Programmer Java.",
+        "Developer.",
+        "Back end engineer"
+
+      ]
+    }
+  ]
+  },
+  "writing": {
+  "label": "/ 05 — WRITING",
+  "title": "Notes on engineering & craft.",
+  "viewAll": "VIEW ALL POSTS →",
+  "read": "READ ESSAY ↗",
+
+  "posts": [
+    {
+      "date": "APR 2024",
+      "title": "Designing typed boundaries between services",
+      "desc": "Why I treat schemas as the most important artifact in any distributed system."
+    },
+    {
+      "date": "JAN 2024",
+      "title": "A CLI is a UI",
+      "desc": "Lessons from building Hearth — small details that make tools feel alive."
+    },
+    {
+      "date": "SEP 2023",
+      "title": "Less hype, more boring",
+      "desc": "In defense of Postgres, monoliths, and patient engineering."
+    }
+  ]
+},
+
+"testimonials": {
+  "label": "/ 06 — KIND WORDS",
+  "title": "From people I've worked alongside.",
+
+  "items": [
+    {
+      "quote": "Alphin has the rare ability to zoom from architectural sketches down to the smallest UI detail without losing the thread. He raises the quality bar of every team he joins.",
+      "name": "David",
+      "role": "STAFF, PT SCOLA LMS BANDUNG"
+    },
+    {
+      "quote": "He shipped our analytics pipeline in half the time we estimated — and the code is the cleanest in the repo. Calm, thoughtful, and dependable.",
+      "name": "Daniel Pratama",
+      "role": "CO-FOUNDER, PT SANSAN SAUDARATEX JAYA - CIMAHI "
+    },
+    {
+      "quote": "Working with Alphin is like working with a designer who happens to write excellent code. Our developer experience improved overnight.",
+      "name": "Maya Iskandar",
+      "role": "STAFF, PT HAND SOLUTIONS INDONESIA - JAKARTA "
+    }
+  ]
+},
+ "contact": {
+  "label": "/ 07 — CONTACT",
+  "title1": "Let's build something",
+  "title2": "meaningful together.",
+  "desc": "I'm always open to discussing new opportunities, interesting problems, or just having a chat about engineering and design.",
+
+  "cta": "HAVE A PROJECT IN MIND?",
+  "email": "alphinirianto@gmail.com",
+
+  "socials": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter",
+    "resume" : "Resume",
+    "instagram": "Instagram",
+    "whatsapp": "Whatsapp"
+  },
+   "links": {
+    "github": "https://github.com/alphinirianto",
+    "linkedin": "https://linkedin.com/in/alphin-irianto-88201a149",
+    "twitter": "https://twitter.com/IriantoAlphin",
+    "resume": "/Cv-Alphin irianto terbaru.pdf",
+    "instagram": "https://instagram.com/yourusername",
+    "whatsapp": "https://wa.me/6285712904896"
+  }
+}
+}
